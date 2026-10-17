@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anass DADA – Ingénieur Full Stack Java & Sécurité</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Background Animated Canvas/Glow -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="logo-bracket">&lt;</span><span class="logo-name">Anass.Dada</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#hero"><i class="fas fa-home"></i> Accueil</a></li>
+        <li><a href="#about"><i class="fas fa-user"></i> À propos</a></li>
+        <li><a href="#skills"><i class="fas fa-layer-group"></i> Compétences</a></li>
+        <li><a href="#experience"><i class="fas fa-briefcase"></i> Expérience</a></li>
+        <li><a href="#projects"><i class="fas fa-code-branch"></i> Projets</a></li>
+        <li><a href="#education"><i class="fas fa-graduation-cap"></i> Formation</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="CV_Anass_DADA_SANLAM.pdf" download class="btn-cv-download">
+          <i class="fas fa-file-pdf"></i>
+          <span>Télécharger CV</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu Mobile">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero">
+    <div class="container hero-container">
+      <div class="hero-left">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span>Disponible Stage PFE (4 à 6 mois) · Février 2027</span>
+        </div>
+
+        <h1 class="hero-title">
+          Concepteur & Développeur <br/>
+          <span class="gradient-text">Full Stack Java & Sécurité</span>
+        </h1>
+
+        <div class="typewriter-box">
+          <span class="code-prefix">$ ~/anass-dada &gt;</span>
+          <span id="typewriter"></span>
+          <span class="cursor">|</span>
+        </div>
+
+        <p class="hero-description">
+          Élève ingénieur en 5<sup>ème</sup> année à <strong>l'EMSI Rabat</strong>, certifié 
+          <strong>Oracle Java SE 17 Developer</strong>. Spécialisé dans les architectures 
+          <strong>Spring Boot microservices</strong>, <strong>Spring Batch</strong>, 
+          la conteneurisation <strong>Docker</strong> et la <strong>sécurité applicative (OWASP)</strong>.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn-primary">
+            <span>Explorer mes projets</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="https://github.com/anassDA" target="_blank" class="btn-github">
+            <i class="fab fa-github"></i>
+            <span>GitHub (@anassDA)</span>
+          </a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="metric-number">03+</span>
+            <span class="metric-text">Expériences en Banque & Assurance</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-number">OCP</span>
+            <span class="metric-text">Java SE 17 Developer Certified</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-number">100%</span>
+            <span class="metric-text">Engagé & Orienté Performance</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="profile-card">
+          <div class="profile-avatar-wrapper">
+            <img src="photo.jpg" alt="Anass DADA" class="profile-img" />
+            <div class="profile-ring"></div>
+          </div>
+
+          <div class="profile-info">
+            <h3 class="profile-name">Anass DADA</h3>
+            <p class="profile-role">Full Stack Java & Security Engineer</p>
+          </div>
+
+          <!-- Floating Micro Badges -->
+          <div class="tech-badge badge-top-right">
+            <i class="fab fa-java java-icon"></i>
+            <span>Java 17 / 21</span>
+          </div>
+          <div class="tech-badge badge-middle-left">
+            <i class="fas fa-shield-halved security-icon"></i>
+            <span>OWASP & Sécurité</span>
+          </div>
+          <div class="tech-badge badge-bottom-right">
+            <i class="fab fa-docker docker-icon"></i>
+            <span>Docker & CI/CD</span>
+          </div>
+
+          <div class="profile-social-bar">
+            <a href="mailto:dadaanass01@gmail.com" title="Envoyer un email"><i class="fas fa-envelope"></i></a>
+            <a href="https://linkedin.com/in/anass-dada-48277517" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/anassDA" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="tel:+212771339972" title="Téléphone"><i class="fas fa-phone"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-badge">// 01. Profil & Parcours</span>
+        <h2 class="section-heading">À Propos De Moi</h2>
+        <p class="section-subheading">Un profil polyvalent axé sur la rigueur technique, l'optimisation et la sécurité.</p>
+      </div>
+
+      <div class="about-content-grid">
+        <div class="about-bio-card">
+          <h3>Ingénieur en formation & Développeur passionné</h3>
+          <p>
+            Actuellement en dernière année du <strong>Cycle d'Ingénieur en Informatique et Réseaux à l'EMSI Rabat</strong> (option Développement Digital & Systèmes d'Information), je conçois des applications robustes, testables et scalables.
+          </p>
+          <p>
+            Fort de mes expériences chez <strong>Al Barid Bank</strong> (plateforme batch low-code), à la <strong>MAMDA-MCMA</strong> (refonte microservices & config server) et chez <strong>RMA Assurance</strong>, j'ai acquis une solide maîtrise du cycle de vie logiciel, des architectures d'entreprise et des contraintes de haute disponibilité.
+          </p>
+
+          <div class="highlights-box">
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>Certification OCP Java SE 17 :</strong> Maîtrise avancée des APIs modernes, du multithreading et de la JVM.</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>Sécurité Applicative :</strong> Prévention OWASP Top 10, protection contre les prompt-injections LLM, OAuth2 & JWT Keycloak.</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>Pratiques DevOps :</strong> Docker Compose, conteneurisation des services, pipelines GitHub Actions CI/CD.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-cards-column">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-award"></i></div>
+            <div class="feature-details">
+              <h4>Certifications Officielles</h4>
+              <p><strong>Oracle Certified Professional :</strong> Java SE 17 Developer (1Z0-829)</p>
+              <p><strong>Cisco :</strong> DevOps for Network Automation</p>
+              <p><strong>Google :</strong> Agile Project Management</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-language"></i></div>
+            <div class="feature-details">
+              <h4>Langues de Travail</h4>
+              <p><strong>Français :</strong> Courant & Technique (C1)</p>
+              <p><strong>Anglais :</strong> Professionnel (B2)</p>
+              <p><strong>Arabe :</strong> Langue maternelle</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-medal"></i></div>
+            <div class="feature-details">
+              <h4>Centres d'intérêt & Rigueur</h4>
+              <p><strong>Taekwondo :</strong> Ceinture Noire 2<sup>ème</sup> DAN (Discipline & persévérance)</p>
+              <p><strong>Lecture & Voyage :</strong> Curiosité constante et adaptabilité</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-badge">// 02. Boîte à outils</span>
+        <h2 class="section-heading">Compétences Techniques</h2>
+        <p class="section-subheading">Un écosystème maîtrisé de la conception backend aux interfaces utilisateur et au déploiement.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Backend -->
+        <div class="skill-category-box">
+          <div class="cat-header">
+            <div class="cat-icon"><i class="fas fa-server"></i></div>
+            <h3>Backend & Architecture</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag-pill tag-java"><i class="fab fa-java"></i> Java 17 / 21</span>
+            <span class="tag-pill">Spring Boot 3</span>
+            <span class="tag-pill">Spring Batch 5</span>
+            <span class="tag-pill">Spring Security</span>
+            <span class="tag-pill">Spring Cloud Config</span>
+            <span class="tag-pill">Jakarta EE</span>
+            <span class="tag-pill">API RESTful</span>
+            <span class="tag-pill">Microservices</span>
+            <span class="tag-pill">OAuth2 / JWT</span>
+            <span class="tag-pill">WebSocket / STOMP</span>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category-box">
+          <div class="cat-header">
+            <div class="cat-icon"><i class="fas fa-desktop"></i></div>
+            <h3>Frontend & UI/UX</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag-pill"><i class="fab fa-angular"></i> Angular 17</span>
+            <span class="tag-pill"><i class="fab fa-react"></i> ReactJS</span>
+            <span class="tag-pill">Next.js</span>
+            <span class="tag-pill"><i class="fab fa-js"></i> TypeScript / ES6+</span>
+            <span class="tag-pill">HTML5 / CSS3 / SCSS</span>
+            <span class="tag-pill">Tailwind CSS</span>
+            <span class="tag-pill">Responsive Design</span>
+          </div>
+        </div>
+
+        <!-- DevOps & Security -->
+        <div class="skill-category-box">
+          <div class="cat-header">
+            <div class="cat-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>DevOps, Cloud & Sécurité</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag-pill tag-docker"><i class="fab fa-docker"></i> Docker & Compose</span>
+            <span class="tag-pill"><i class="fab fa-github"></i> GitHub Actions (CI/CD)</span>
+            <span class="tag-pill">Keycloak IAM</span>
+            <span class="tag-pill">OWASP Top 10 & LLM01</span>
+            <span class="tag-pill">Nginx</span>
+            <span class="tag-pill"><i class="fab fa-linux"></i> Linux</span>
+            <span class="tag-pill">Apache Maven</span>
+            <span class="tag-pill">Git & GitHub</span>
+          </div>
+        </div>
+
+        <!-- Data & Machine Learning -->
+        <div class="skill-category-box">
+          <div class="cat-header">
+            <div class="cat-icon"><i class="fas fa-database"></i></div>
+            <h3>Bases de Données & Data / IA</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag-pill">PostgreSQL</span>
+            <span class="tag-pill">MySQL</span>
+            <span class="tag-pill">MongoDB</span>
+            <span class="tag-pill">SQL Server</span>
+            <span class="tag-pill"><i class="fab fa-python"></i> Python & Pandas</span>
+            <span class="tag-pill">Scikit-learn (ML)</span>
+            <span class="tag-pill">Jupyter Notebooks</span>
+            <span class="tag-pill">Apache PDFBox</span>
+            <span class="tag-pill">Tesseract OCR</span>
+          </div>
+        </div>
+
+        <!-- QA & Methodologies -->
+        <div class="skill-category-box full-width-cat">
+          <div class="cat-header">
+            <div class="cat-icon"><i class="fas fa-check-double"></i></div>
+            <h3>Qualité Logicielle, Conception & Méthodologies</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag-pill">JUnit 5 & Mockito</span>
+            <span class="tag-pill">Principes SOLID</span>
+            <span class="tag-pill">Design Patterns (GoF)</span>
+            <span class="tag-pill">Architecture Hexagonale / Clean</span>
+            <span class="tag-pill">UML & Modélisation SI</span>
+            <span class="tag-pill">Agile / Scrum & Kanban</span>
+            <span class="tag-pill">HackerRank Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-badge">// 03. Expérience</span>
+        <h2 class="section-heading">Parcours Professionnel</h2>
+        <p class="section-subheading">Missions concrètes réalisées dans les secteurs bancaires, assurances et industriels.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Exp 1 -->
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <i class="fas fa-building-columns"></i>
+          </div>
+          <div class="timeline-content-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Développeur Java / Angular (Stage)</h3>
+                <span class="company-badge">Al Barid Bank · Pôle Organisation, AMOA et SI · Rabat</span>
+              </div>
+              <span class="date-badge">07/2026 – 09/2026</span>
+            </div>
+            <p class="timeline-summary">
+              Conception et développement complet de <strong>« BaridFlow »</strong>, une plateforme innovante low-code pour la génération et le pilotage de traitements batch récurrents.
+            </p>
+            <ul class="timeline-achievements">
+              <li><strong>Génération dynamique de jobs Spring Batch</strong> depuis une interface web sans intervention sur le code source.</li>
+              <li>Développement d'APIs REST Spring Boot 3 et interface réactive Angular 17.</li>
+              <li>Monitoring des flux en temps réel via <strong>WebSocket / STOMP</strong> avec validation réussie sur des jeux de données de plus de <strong>50 000 lignes</strong>.</li>
+              <li>Export automatique en projet Maven Spring Batch autonome pour l'auditabilité et la réversibilité technique.</li>
+              <li>Sécurisation complète avec <strong>Keycloak (OAuth2 / JWT)</strong>, stack conteneurisée <strong>Docker Compose</strong> (5 services) et CI/CD sous <strong>GitHub Actions</strong>.</li>
+            </ul>
+            <div class="tech-chips">
+              <span>Java 21</span><span>Spring Boot 3.2</span><span>Spring Batch 5.1</span><span>Angular 17</span><span>Keycloak</span><span>Docker Compose</span><span>GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Exp 2 -->
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <i class="fas fa-shield-virus"></i>
+          </div>
+          <div class="timeline-content-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Développeur Backend, Architecture Microservices (Stage)</h3>
+                <span class="company-badge">MAMDA – MCMA, Assurance Mutuelle · Rabat</span>
+              </div>
+              <span class="date-badge">08/2025 – 09/2025</span>
+            </div>
+            <p class="timeline-summary">
+              Participation active à la refonte du système d'information interne vers une architecture modulaire en microservices.
+            </p>
+            <ul class="timeline-achievements">
+              <li>Mise en place d'un serveur de configuration centralisé (<strong>Spring Cloud Config</strong>) pour piloter l'ensemble des microservices.</li>
+              <li>Conception et implémentation d'APIs REST sécurisées et performantes.</li>
+              <li>Intégration de <strong>MongoDB</strong> pour la gestion dynamique des données non relationnelles et contribution aux bonnes pratiques de sécurisation des échanges inter-services.</li>
+            </ul>
+            <div class="tech-chips">
+              <span>Java</span><span>Spring Boot</span><span>Spring Cloud Config</span><span>MongoDB</span><span>API REST</span><span>Microservices</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Exp 3 -->
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <i class="fas fa-file-contract"></i>
+          </div>
+          <div class="timeline-content-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Développeur Full Stack (Stage)</h3>
+                <span class="company-badge">RMA Assurance · Meknès</span>
+              </div>
+              <span class="date-badge">07/2024 – 10/2024</span>
+            </div>
+            <p class="timeline-summary">
+              Développement d'une application interne de gestion intégrale des contrats d'assurance.
+            </p>
+            <ul class="timeline-achievements">
+              <li>Conception des modules de saisie, validation et consultation sécurisée des dossiers clients.</li>
+              <li>Optimisation des requêtes de recherche et génération de rapports d'activité.</li>
+            </ul>
+            <div class="tech-chips">
+              <span>PHP</span><span>JavaScript</span><span>MySQL</span><span>HTML5/CSS3</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Exp 4 -->
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <i class="fas fa-industry"></i>
+          </div>
+          <div class="timeline-content-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Développeur Full Stack (Stage)</h3>
+                <span class="company-badge">Les Grands Moulins de Midelt · Midelt</span>
+              </div>
+              <span class="date-badge">03/2024 – 04/2024</span>
+            </div>
+            <p class="timeline-summary">
+              Automatisation des processus RH et de la paie pour l'équipe administrative de la société.
+            </p>
+            <ul class="timeline-achievements">
+              <li>Application web pour le calcul automatisé des salaires, gestion des congés et présences.</li>
+              <li>Création d'une interface utilisateur intuitive et moderne en ReactJS couplée à une API REST.</li>
+            </ul>
+            <div class="tech-chips">
+              <span>ReactJS</span><span>Laravel</span><span>REST API</span><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-badge">// 04. Réalisations</span>
+        <h2 class="section-heading">Projets Notables & Open Source</h2>
+        <p class="section-subheading">Sécurité, génie logiciel, intelligence artificielle et applications d'entreprise.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="security">Sécurité & IA</button>
+        <button class="filter-btn" data-filter="java">Java & Spring</button>
+        <button class="filter-btn" data-filter="web">Web & Full Stack</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: CVGuard -->
+        <div class="project-card" data-category="security java">
+          <div class="project-header">
+            <div class="project-folder-icon">
+              <i class="fas fa-shield-halved"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/anassDA/CVguard" target="_blank" title="Code source GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">CVGuard – Inspection & Sécurité LLM</h3>
+          <p class="project-tagline">Microservice d'inspection en amont des systèmes de tri de CV basés sur l'IA (LLM).</p>
+          <ul class="project-points">
+            <li>Moteur d'analyse composé de <strong>7 règles de détection</strong> contre le <em>Prompt Injection</em> dissimulé (contraste invisible, police miniature, caractères de largeur zéro).</li>
+            <li>Double vérification par extraction textuelle directe et <strong>reconnaissance optique (OCR Tesseract)</strong>.</li>
+            <li>Calcul d'un score de risque explicable selon le référentiel <strong>OWASP LLM01</strong> et assainissement avant transmission au LLM.</li>
+          </ul>
+          <div class="project-tech-footer">
+            <span>Java 21</span><span>Spring Boot 3</span><span>PDFBox 3</span><span>Tesseract OCR</span><span>Docker</span>
+          </div>
+        </div>
+
+        <!-- Project 2: DDoS Detection IoT -->
+        <div class="project-card" data-category="security">
+          <div class="project-header">
+            <div class="project-folder-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/anassDA/DDoS_Detection_Project" target="_blank" title="Code source GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">DDoS Detection in IoT Networks</h3>
+          <p class="project-tagline">Système de détection d'intrusions et d'attaques DDoS sur réseaux IoT via Machine Learning supervisé.</p>
+          <ul class="project-points">
+            <li>Pipeline d'ingénierie des caractéristiques et prétraitement de données de flux réseau (Dataset ToN-IoT).</li>
+            <li>Implémentation, réglage fin et comparaison de 3 algorithmes : <strong>KNN</strong>, <strong>Decision Trees</strong> et <strong>Support Vector Machine (SVM)</strong>.</li>
+            <li>Évaluation rigoureuse des performances : matrices de confusion, précision, rappel, F1-Score et temps de calcul.</li>
+          </ul>
+          <div class="project-tech-footer">
+            <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Machine Learning</span><span>Jupyter</span>
+          </div>
+        </div>
+
+        <!-- Project 3: TaskFlow Next -->
+        <div class="project-card" data-category="web">
+          <div class="project-header">
+            <div class="project-folder-icon">
+              <i class="fas fa-list-check"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/anassDA/TaskFlow---Gestion-de-projets-collaboratifs" target="_blank" title="Code source GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">TaskFlow – Projets Collaboratifs</h3>
+          <p class="project-tagline">Plateforme web collaborative de gestion de projets et de flux de travail par équipes.</p>
+          <ul class="project-points">
+            <li>Organisation des tâches par sprints, tableaux Kanban dynamiques et assignation aux collaborateurs.</li>
+            <li>Développé avec <strong>Next.js</strong> et <strong>TypeScript</strong> garantissant un typage strict et des temps de rendu optimaux.</li>
+            <li>Gestion des permissions utilisateurs, statuts d'avancement et notifications temps réel.</li>
+          </ul>
+          <div class="project-tech-footer">
+            <span>TypeScript</span><span>Next.js</span><span>React</span><span>Tailwind CSS</span><span>REST API</span>
+          </div>
+        </div>
+
+        <!-- Project 4: Stokio -->
+        <div class="project-card" data-category="java web">
+          <div class="project-header">
+            <div class="project-folder-icon">
+              <i class="fas fa-warehouse"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/anassDA" target="_blank" title="Profil GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Stokio – ERP Stock & Ventes</h3>
+          <p class="project-tagline">Solution web complète pour la gestion des approvisionnements, du stock et des ventes.</p>
+          <ul class="project-points">
+            <li>Gestion du cycle de vie des produits, alertes de réapprovisionnement automatique et facturation.</li>
+            <li>Architecture sécurisée basée sur Spring Boot avec authentification <strong>JWT</strong> et contrôle d'accès basé sur les rôles (RBAC).</li>
+            <li>Tableau de bord dynamique avec statistiques de ventes et graphiques analytiques.</li>
+          </ul>
+          <div class="project-tech-footer">
+            <span>Spring Boot</span><span>ReactJS</span><span>MySQL</span><span>Spring Security</span><span>JWT</span>
+          </div>
+        </div>
+
+        <!-- Project 5: InventorySystem Jakarta -->
+        <div class="project-card" data-category="java">
+          <div class="project-header">
+            <div class="project-folder-icon">
+              <i class="fas fa-boxes-packing"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/anassDA/InventorySystem-Jakarta" target="_blank" title="Code source GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">InventorySystem – Jakarta EE</h3>
+          <p class="project-tagline">Système de gestion d'inventaire d'entreprise conçu selon les spécifications Jakarta EE.</p>
+          <ul class="project-points">
+            <li>Architecture multicouche entreprise : Servlets, JPA / Hibernate, EJB et gestion des transactions.</li>
+            <li>Respect des design patterns DAO, Factory et MVC pour une maintenabilité maximale.</li>
+            <li>Gestion complète des stocks, des fournisseurs et traçabilité des opérations.</li>
+          </ul>
+          <div class="project-tech-footer">
+            <span>Jakarta EE</span><span>Java</span><span>JPA / Hibernate</span><span>MySQL</span><span>Maven</span>
+          </div>
+        </div>
+
+        <!-- Project 6: BaridFlow Low-Code Batch -->
+        <div class="project-card" data-category="java web">
+          <div class="project-header">
+            <div class="project-folder-icon">
+              <i class="fas fa-gears"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/anassDA/-Low-Code-" target="_blank" title="Code source GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">BaridFlow – Low-Code Batch Engine</h3>
+          <p class="project-tagline">Générateur automatisé de traitements par lots Spring Batch avec suivi en temps réel.</p>
+          <ul class="project-points">
+            <li>Création et paramétrage visuel de pipelines de traitement sans écriture de code Java.</li>
+            <li>Système d'export de projets Maven autonomes prêts pour exécution en production.</li>
+            <li>Monitoring WebSocket avec suivi des logs d'exécution et gestion des erreurs/reprise.</li>
+          </ul>
+          <div class="project-tech-footer">
+            <span>Spring Batch 5</span><span>Spring Boot 3</span><span>Angular 17</span><span>WebSocket</span><span>Keycloak</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="github-cta-box">
+        <i class="fab fa-github"></i>
+        <div class="github-cta-text">
+          <h4>Envie de découvrir tous mes repositories et contributions ?</h4>
+          <p>Consultez mon profil GitHub public avec le code source de tous mes projets universitaires et personnels.</p>
+        </div>
+        <a href="https://github.com/anassDA" target="_blank" class="btn-primary">
+          <span>Visiter GitHub (@anassDA)</span>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section id="education">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-badge">// 05. Formation</span>
+        <h2 class="section-heading">Cursus Académique</h2>
+        <p class="section-subheading">Un parcours solide axé sur l'ingénierie logicielle et les technologies web modernes.</p>
+      </div>
+
+      <div class="education-grid">
+        <div class="edu-card highlighted-edu">
+          <div class="edu-badge-year">2024 – 2027</div>
+          <div class="edu-body">
+            <span class="edu-type">Diplôme d'Ingénieur d'État</span>
+            <h3 class="edu-degree">Cycle d'Ingénieur en Informatique et Réseaux</h3>
+            <h4 class="edu-institution"><i class="fas fa-school"></i> École Marocaine des Sciences de l'Ingénieur (EMSI) · Rabat</h4>
+            <p class="edu-desc">
+              <strong>Option :</strong> Développement Digital & Systèmes d'Information.<br/>
+              Architectures logicielles distribuées, sécurité des systèmes, cloud computing, administration système, IA et gestion de projet.
+            </p>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-badge-year">2022 – 2024</div>
+          <div class="edu-body">
+            <span class="edu-type">Diplôme de Technicien Spécialisé</span>
+            <h3 class="edu-degree">Développement Digital – Option Full Stack</h3>
+            <h4 class="edu-institution"><i class="fas fa-school"></i> Institut Spécialisé de Technologie Appliquée (ISTA) · Meknès</h4>
+            <p class="edu-desc">
+              Bases solides en programmation orientée objet, conception de bases de données relationnelles, développement web frontend et backend (PHP/Laravel, ReactJS, JavaScript).
+            </p>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-badge-year">2021 – 2022</div>
+          <div class="edu-body">
+            <span class="edu-type">Diplôme d'Études Universitaires</span>
+            <h3 class="edu-degree">DEUST en Biologie, Chimie, Géologie (BCG)</h3>
+            <h4 class="edu-institution"><i class="fas fa-university"></i> Faculté des Sciences et Techniques (FST) · Errachidia</h4>
+            <p class="edu-desc">
+              Formation scientifique fondamentale développant rigueur méthodologique, capacité d'analyse et esprit critique.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-badge">// 06. Contact</span>
+        <h2 class="section-heading">Prendre Contact</h2>
+        <p class="section-subheading">À la recherche d'un stage PFE de 4 à 6 mois dès février 2027. Discutons de vos besoins !</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-details-panel">
+          <h3>Parlons de vos projets</h3>
+          <p>
+            Que ce soit pour une opportunité de <strong>stage PFE</strong>, un échange technique ou une collaboration, n'hésitez pas à me contacter directement.
+          </p>
+
+          <div class="contact-cards-list">
+            <a href="mailto:dadaanass01@gmail.com" class="contact-row-card">
+              <div class="c-icon"><i class="fas fa-envelope"></i></div>
+              <div class="c-info">
+                <span class="c-label">Email Personnel</span>
+                <span class="c-val">dadaanass01@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="tel:+212771339972" class="contact-row-card">
+              <div class="c-icon"><i class="fas fa-phone"></i></div>
+              <div class="c-info">
+                <span class="c-label">Téléphone Mobile</span>
+                <span class="c-val">+212 771 339 972</span>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/anass-dada-48277517" target="_blank" class="contact-row-card">
+              <div class="c-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div class="c-info">
+                <span class="c-label">LinkedIn</span>
+                <span class="c-val">linkedin.com/in/anass-dada-48277517</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/anassDA" target="_blank" class="contact-row-card">
+              <div class="c-icon"><i class="fab fa-github"></i></div>
+              <div class="c-info">
+                <span class="c-label">GitHub</span>
+                <span class="c-val">github.com/anassDA</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-quick-download">
+            <a href="CV_Anass_DADA_SANLAM.pdf" download class="btn-cv-full">
+              <i class="fas fa-download"></i>
+              <span>Télécharger mon Curriculum Vitae (PDF)</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-panel">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Votre Nom complet</label>
+                <input type="text" id="name" placeholder="ex. Jean Dupont" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Votre Adresse Email</label>
+                <input type="email" id="email" placeholder="jean@entreprise.com" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Sujet du Message</label>
+              <input type="text" id="subject" placeholder="Offre de stage PFE / Entretien technique" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Bonjour Anass, votre profil nous intéresse pour..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary btn-submit">
+              <span>Envoyer le Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-brand">&lt;Anass.Dada/&gt;</span>
+        <p>Élève Ingénieur en Informatique et Réseaux · Développeur Full Stack Java & Sécurité</p>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#experience">Expérience</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social-icons">
+        <a href="https://github.com/anassDA" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/anass-dada-48277517" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:dadaanass01@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Anass DADA. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
